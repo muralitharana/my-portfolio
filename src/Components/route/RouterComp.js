@@ -15,12 +15,12 @@ const RouterComp = () => {
       
       <Routes>
         <Route path="/my-portfolio/" element={<Home />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Education" element={<Education />} />
-        <Route path="/Certificates" element={<Certificates />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/my-portfolio/Skills" element={<Skills />} />
+        <Route path="/my-portfolio/Education" element={<Education />} />
+        <Route path="/my-portfolio/Certificates" element={<Certificates />} />
+        <Route path="/my-portfolio/Projects" element={<Projects />} />
+        <Route path="/my-portfolio/Contact" element={<Contact />} />
+        <Route path="/my-portfolio/About" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
