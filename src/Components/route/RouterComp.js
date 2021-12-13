@@ -14,7 +14,7 @@ const RouterComp = () => {
     <Router>
       
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/my-portfolio/" element={<Home />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Education" element={<Education />} />
         <Route path="/Certificates" element={<Certificates />} />
