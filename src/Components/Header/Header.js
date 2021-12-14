@@ -2,36 +2,45 @@ import React from 'react'
 import "./Header.css"
 import {useState} from "react"
 import { NavLink } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 const Header = () => {
     const [topBarHeight, settopBarHeight] = useState("0px")
     return (
+        <>
         <div className='headerContainer'>
-            <div className='topBar' style={{height:topBarHeight}}>
-                <button onClick={()=>settopBarHeight("0px")}>Close</button>
-                <NavLink to="/my-portfolio/">Home</NavLink>
-                <NavLink to="/my-portfolio/Skills">Skills</NavLink>
-                <NavLink to="/my-portfolio/Education">Education</NavLink>
-                <NavLink to="/my-portfolio/Certificates">Certificates</NavLink>
-                <NavLink to="/my-portfolio/Projects">Projects</NavLink>
-                <NavLink to="/my-portfolio/Contact">Contact</NavLink>
-                <NavLink to="/my-portfolio/About">About</NavLink>
+            <div className='topBar' style={{height:topBarHeight,overflow:"hidden"}}>
+                <button onClick={()=>settopBarHeight("0px")}>&times;</button>
+                <NavLink className="navLink" to="/my-portfolio/">Home</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Skills">Skills</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Education">Education</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Certificates">Certificates</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Projects">Projects</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Contact">Contact</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/About">About</NavLink>
             </div>
             <div className='topBarButton'>
-                <button onClick={()=>settopBarHeight("60%")}>Top</button>
+                <button onClick={()=>settopBarHeight("65%")}>&#9776;</button>
             </div>
             <header>
-                Header
+                <h1>PORTFOLIO</h1>
             </header>
-            <nav>
-                <NavLink to="/my-portfolio/">Home</NavLink>
-                <NavLink to="/my-portfolio/Skills">Skills</NavLink>
-                <NavLink to="/my-portfolio/Education">Education</NavLink>
-                <NavLink to="/my-portfolio/Certificates">Certificates</NavLink>
-                <NavLink to="/my-portfolio/Projects">Projects</NavLink>
-                <NavLink to="/my-portfolio/Contact">Contact</NavLink>
-                <NavLink to="/my-portfolio/About">About</NavLink>
-            </nav>
+           
         </div>
+        <div className='navBar'>
+             <nav>
+                <NavLink className="navLink" to="/my-portfolio/">Home</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Skills">Skills</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Education">Education</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Certificates">Certificates</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Projects">Projects</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/Contact">Contact</NavLink>
+                <NavLink className="navLink" to="/my-portfolio/About">About</NavLink>
+                <hr/>
+            </nav>
+            
+        </div>
+        
+        </>
     )
 }
 
