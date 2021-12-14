@@ -50,7 +50,9 @@
     background-color: rgb(231, 210, 241);
   }
 }
-
+.liSeeMore{
+  background-color: black;
+}
 @media (max-width: 768px) {
   .h1Home {
     right: 0;

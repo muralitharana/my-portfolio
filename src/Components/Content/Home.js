@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import "./Home.css";
 import myBanner from "../../Image/myBanner.jpg";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -28,6 +29,20 @@ const Home = () => {
               <li>MongoDB</li>
               <li>GIT</li>
               <li>GITHUB</li>
+            </ul>
+            <ul>
+              <Link
+                style={{
+                  backgroundColor: "rgb(170,0,250)",
+                  textDecoration: "none",
+                  color: "white",
+                  borderRadius: "10px",
+                  padding:"10px",
+                }}
+                to="/my-portfolio/Skills"
+              >
+                See more
+              </Link>
             </ul>
           </div>
           <div className="contentItems">
