@@ -36,12 +36,15 @@
 }
 @media (max-width:768px) {
     .skillsContainer{
-        margin-top: 20%;
+        margin-top: 30%;
     }
     .skillsContent{
         display: block;
     }
     .skillsItems{
         width: 100%;
+    }
+    .skillsItems li{
+        width: 80%;
     }
 }
