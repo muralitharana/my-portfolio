@@ -10,11 +10,15 @@ header h1 {
   margin: 0;
   color: rgba(255, 255, 255, 0.685);
   text-align: end;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 .topBarButton {
   display: none;
   border-radius: 60px;
   background-color: rgba(203, 111, 245, 0.774);
+  margin-top: 5px;
+  margin-left: 2px;
 }
 .topBarButton button {
   background-color: transparent;
@@ -43,7 +47,7 @@ header h1 {
     border: 0px;
     border-radius: 50px;
     margin-left: 88%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 .navBar {
   position: fixed;
@@ -74,5 +78,10 @@ header h1 {
   .navLink {
     display: block;
     color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid ;
   }
 }

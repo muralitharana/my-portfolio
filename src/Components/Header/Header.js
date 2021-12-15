@@ -22,7 +22,7 @@ const Header = () => {
                 <button onClick={()=>settopBarHeight("65%")}>&#9776;</button>
             </div>
             <header>
-                <h1>PORTFOLIO</h1>
+                <h1>MURALITHARAN A</h1>
             </header>
            
         </div>

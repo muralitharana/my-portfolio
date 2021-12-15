@@ -22,6 +22,7 @@ const Skills = () => {
       <div className="skillsContainer">
         <div className="skillsContent">
           <div className="skillsItems">
+            <h2 style={{textIndent:"7%"}}>Skills</h2>
             <ul>
               <li>
                 HTML<strong>{skillsStrength.html}</strong>
