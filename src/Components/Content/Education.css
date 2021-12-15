@@ -1,0 +1,54 @@
+.educationContainer{
+    margin-top: 8%;
+}
+.educationContent{
+    display: flex;
+}
+.educationItems{
+    width: 50%;
+}
+.educationItems img{
+    width: 100%;
+    height: 100%;
+}
+.educationItems ul{
+    padding: 0;
+    border-radius: 10px;
+    border: 2px solid rgb(170,0,250);
+    margin-left:10% ;
+}
+.standard{
+    text-indent: 0px;
+    list-style: none;
+    background-color: rgb(170,0,250,0.1);
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+.collageName{
+    list-style: none;
+    padding: 10px;
+    text-align: end;
+}
+@media (max-width:1000px) {
+    .educationContainer{
+        margin-top: 20%;
+    }
+}
+@media (max-width:768px) {
+    .educationContainer{
+        margin-top: 30%;
+    }
+    .educationContent{
+        display: block;
+    }
+    .educationItems{
+        width: 100%;
+    }
+    .educationItems ul{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+}
