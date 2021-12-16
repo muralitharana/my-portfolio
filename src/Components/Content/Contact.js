@@ -28,7 +28,7 @@ const Contact = () => {
             <ul>
               <li className="contactDetail">LinkedIn</li>
               <li className="contactValue">
-                <a className="linkedIn" href="https://www.linkedin.com/in/muralitharan-a-a49805204">
+                <a className="linkedIn" href="https://www.linkedin.com/in/muralitharan-a-a49805204" target="_blank">
                   <FaLinkedinIn />
                 </a>
               </li>
@@ -36,7 +36,7 @@ const Contact = () => {
           </div>
           <div className="contactItems">
               <h2>
-                  Will Update
+                  {/* Will Update */}
               </h2>
           </div>
         </div>

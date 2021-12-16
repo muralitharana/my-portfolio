@@ -9,7 +9,7 @@ const About = () => {
         <div className="aboutContent">
           <div className="aboutItems">
               <h2 style={{textAlign:"center"}}>Cover Letter</h2>
-            <p>
+            <p className="p">
               Dear Hiring Manager,
               <br /><br />
               I am writing to express my interest in the opening for this

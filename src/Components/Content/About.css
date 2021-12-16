@@ -4,21 +4,7 @@
 .aboutContent{
     display: block;
 }
-
-@media (max-width:768px) {
-    .aboutContainer{
-        margin-top: 30%;
-    }
-    .aboutContent{
-        display: block;
-    }
-    .aboutItems{
-        width: 80%;
-        margin: auto;
-    }
-}
-
-p{
+.p{
     border: 2px solid gray;
     font-size: large;
     width: 50%;
@@ -27,3 +13,13 @@ p{
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px rgb(226, 225, 225);
 }
+@media (max-width:768px) {
+    .aboutContainer{
+        margin-top: 30%;
+    }
+    .p{
+        width: 80%;
+    }
+}
+
+

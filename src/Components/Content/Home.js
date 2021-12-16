@@ -4,6 +4,7 @@ import "./Home.css";
 import myBanner from "../../Image/myBanner.jpg";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaPhone, FaMailBulk } from "react-icons/fa";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,21 @@ const Home = () => {
               Hi,This is <b>Muralitharan A</b>
             </h1>
             <h1 className="h1Home">Full Stack Developer</h1>
+            <h3>Contacts</h3>
+            <a
+              className="linkedInHome"
+              href="https://www.linkedin.com/in/muralitharan-a-a49805204"
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a className="phoneHome" href="tel:9715161520">
+              <FaPhone />
+            </a>
+            <a className="emailHome" href="mailto:amuralitharan14@gmail.com">
+              <FaMailBulk />
+            </a>
+
             <h2 className="h2Home">Skill Highlights</h2>
             <ul>
               <li>HTML</li>
@@ -37,7 +53,7 @@ const Home = () => {
                   textDecoration: "none",
                   color: "white",
                   borderRadius: "10px",
-                  padding:"10px",
+                  padding: "10px",
                 }}
                 to="/my-portfolio/Skills"
               >
@@ -50,6 +66,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
