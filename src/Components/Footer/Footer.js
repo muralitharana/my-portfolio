@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { FaLinkedinIn, FaPhone, FaMailBulk } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -17,10 +18,19 @@ const Footer = () => {
       </div>
       <div className="footerItems">
         <h3>Contact</h3>
-        Phone 9715**1520
-        <br />
-        Email{" "}
-        <a href="mailto:amuralitharan14@gmail.com">amuralitharan14@gmail.com</a>
+         <a
+              className="linkedInHome"
+              href="https://www.linkedin.com/in/muralitharan-a-a49805204"
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a className="phoneHome" href="tel:9715161520">
+              <FaPhone />
+            </a>
+            <a className="emailHome" href="mailto:amuralitharan14@gmail.com">
+              <FaMailBulk />
+            </a>
       </div>
     </div>
   );
