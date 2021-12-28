@@ -5,7 +5,24 @@ import myBanner from "../../Image/myBanner.jpg";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaPhone, FaMailBulk } from "react-icons/fa";
+import { useState, useEffect } from "react";
 const Home = () => {
+  const [name, setName] = useState("");
+  useEffect(() => {
+    setTimeout(typing(),4000)
+  }, []);
+  let str = "Muralitharan A";
+  let i = 0;
+  let newStr = "";
+  const typing = () => {
+    if (i < str.length) {
+      newStr += str[i]; 
+      setName(newStr);
+      i++;
+      setTimeout(typing, 100);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -13,7 +30,8 @@ const Home = () => {
         <div className="contentHome">
           <div className="contentItems">
             <h1 className="h1Home">
-              Hi,This is <b>Muralitharan A</b>
+              Hi,This is <b id="name">{name}</b>
+              <div className="typer"></div>
             </h1>
             <h1 className="h1Home">Full Stack Developer</h1>
             <h3>Contacts</h3>

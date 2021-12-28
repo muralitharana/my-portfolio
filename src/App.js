@@ -18,8 +18,13 @@ function App() {
               <div class="circle-border">
                 <div class="circle-core"></div>
               </div>
-              <p className="para">M</p>
+              <p className="para">
+                M
+               
+              </p>
+              
             </div>
+            
           </div>
         }
       >
