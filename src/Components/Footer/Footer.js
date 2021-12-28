@@ -12,10 +12,12 @@ const Footer = () => {
           Thanjavur(DT).
         </address>
       </div>
+      <hr/>
       <div className="footerItems">
         <h3>About </h3>
         <p>I am a Full Stack Web developer</p>
       </div>
+      <hr/>
       <div className="footerItems">
         <h3>Contact</h3>
          <a

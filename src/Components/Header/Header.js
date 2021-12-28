@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
         <div className='headerContainer'>
-            <div className='topBar' style={{height:topBarHeight,overflow:"hidden"}}>
+            <div className='topBar' style={{height:topBarHeight,overflow:"auto"}}>
                 <button onClick={()=>settopBarHeight("0px")}>&times;</button>
                 <NavLink className="navLink" to="/my-portfolio/">Home</NavLink>
                 <NavLink className="navLink" to="/my-portfolio/Skills">Skills</NavLink>
