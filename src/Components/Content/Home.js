@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaPhone, FaMailBulk } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import profile from "../../Image/profile.jpg"
 const Home = () => {
   const [name, setName] = useState("");
   useEffect(() => {
@@ -29,6 +30,9 @@ const Home = () => {
       <div className="homeContainer">
         <div className="contentHome">
           <div className="contentItems">
+            <div className="myPicture">
+              <img src={profile}/>
+            </div>
             <h1 className="h1Home">
               Hi,This is <b id="name">{name}</b>
               <div className="typer"></div>
