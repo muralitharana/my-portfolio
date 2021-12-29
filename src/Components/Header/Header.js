@@ -19,7 +19,7 @@ const Header = () => {
                 <NavLink className="navLink" to="/my-portfolio/About">About</NavLink>
             </div>
             <div className='topBarButton'>
-                <button onClick={()=>settopBarHeight("70%")}>&#9776;</button>
+                <button onClick={()=>settopBarHeight("50%")}>&#9776;</button>
             </div>
             <header>
                 <h1>MURALITHARAN A</h1>

@@ -9,14 +9,14 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const [name, setName] = useState("");
   useEffect(() => {
-    setTimeout(typing(),4000)
+    setTimeout(typing(), 4000);
   }, []);
-  let str = "Muralitharan A";
+  let str = "Muralitharan A ";
   let i = 0;
   let newStr = "";
   const typing = () => {
     if (i < str.length) {
-      newStr += str[i]; 
+      newStr += str[i];
       setName(newStr);
       i++;
       setTimeout(typing, 100);
@@ -34,50 +34,52 @@ const Home = () => {
               <div className="typer"></div>
             </h1>
             <h1 className="h1Home">Full Stack Developer</h1>
-            <h3>Contacts</h3>
-            <a
-              className="linkedInHome"
-              href="https://www.linkedin.com/in/muralitharan-a-a49805204"
-              target="_blank"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a className="phoneHome" href="tel:9715161520">
-              <FaPhone />
-            </a>
-            <a className="emailHome" href="mailto:amuralitharan14@gmail.com">
-              <FaMailBulk />
-            </a>
-
-            <h2 className="h2Home">Skill Highlights</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>ReactJS</li>
-              <li>BootStrap</li>
-            </ul>
-            <ul>
-              <li>NodeJS</li>
-              <li>ExpressJS</li>
-              <li>MongoDB</li>
-              <li>GIT</li>
-              <li>GITHUB</li>
-            </ul>
-            <ul>
-              <Link
-                style={{
-                  backgroundColor: "rgb(170,0,250)",
-                  textDecoration: "none",
-                  color: "white",
-                  borderRadius: "10px",
-                  padding: "10px",
-                }}
-                to="/my-portfolio/Skills"
+            <div className="contactDiv">
+              <a
+                className="linkedInHome"
+                href="https://www.linkedin.com/in/muralitharan-a-a49805204"
+                target="_blank"
               >
-                See more
-              </Link>
-            </ul>
+                <FaLinkedinIn />
+              </a>
+              <a className="phoneHome" href="tel:9715161520">
+                <FaPhone />
+              </a>
+              <a className="emailHome" href="mailto:amuralitharan14@gmail.com">
+                <FaMailBulk />
+              </a>
+            </div>
+            <div className="skillsDiv">
+              <h2 className="h2Home">Skill Highlights</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>BootStrap</li>
+              </ul>
+              <ul>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>MongoDB</li>
+                <li>GIT</li>
+                <li>GITHUB</li>
+              </ul>
+              <ul>
+                <Link
+                  style={{
+                    backgroundColor: "rgb(170,0,250)",
+                    textDecoration: "none",
+                    color: "white",
+                    borderRadius: "10px",
+                    padding: "10px",
+                  }}
+                  to="/my-portfolio/Skills"
+                >
+                  See more
+                </Link>
+              </ul>
+            </div>
           </div>
           <div className="contentItems">
             <img src={myBanner} />
