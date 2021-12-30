@@ -10,7 +10,7 @@ import profile from "../../Image/profile.jpg"
 const Home = () => {
   const [name, setName] = useState("");
   useEffect(() => {
-    setTimeout(typing(), 4000);
+    setTimeout(()=>typing(), 500);
   }, []);
   let str = "Muralitharan A ";
   let i = 0;

@@ -1,6 +1,7 @@
 import Header from "./Components/Header/Header";
 import RouterComp from "./Components/route/RouterComp";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 const LazyLoad = lazy(
   () =>
@@ -9,22 +10,39 @@ const LazyLoad = lazy(
     )
 );
 function App() {
+  const [loadingText, setLoadingText] = useState("");
+  useEffect(() => {
+    loadingContent();
+  }, []);
+  let txt = "Welcome";
+  let i = 0;
+  let str = "";
+  const loadingContent = () => {
+    if (i < txt.length) {
+      str += txt[i];
+      setLoadingText(str);
+      i++;
+      setTimeout(loadingContent, 100);
+    }
+    else{
+      i=0;
+      str = "";
+      setTimeout(loadingContent, 100);
+    }
+  };
+
   return (
     <div className="App">
       <Suspense
         fallback={
           <div className="lazyConatiner">
-            <div class="spinner-box">
-              <div class="circle-border">
-                <div class="circle-core"></div>
+            <div className="spinner-box">
+              <div className="circle-border">
+                <div className="circle-core"></div>
               </div>
-              <p className="para">
-                M
-               
-              </p>
-              
+              <p className="para">M</p>
             </div>
-            
+            <h1 className="loadingContent">{loadingText}</h1>
           </div>
         }
       >

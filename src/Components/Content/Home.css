@@ -12,12 +12,12 @@
   padding: 10px;
   width: 50%;
 }
-.myPicture{
+.myPicture {
   height: 100px;
   width: 100px;
   margin: auto;
 }
-.myPicture img{
+.myPicture img {
   border-radius: 50%;
   animation: myPictureAnimation 2s infinite;
 }
@@ -25,15 +25,15 @@
 @keyframes myPictureAnimation {
   from {
     box-shadow: 0px 0px 10px 10px rgb(170, 0, 250);
-  }  
+  }
   to {
     box-shadow: 0px 0px 10px 10px rgb(213, 157, 230);
   }
 }
 
-.h1Home{
+.h1Home {
   border: 1px solid rgb(170, 0, 250, 0.2);
-  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236,0.7);
+  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236, 0.7);
   padding: 5px;
   border-radius: 5px;
 }
@@ -41,7 +41,7 @@
   font-family: "Times New Roman", Times, serif;
   margin-top: 10%;
   border: 1px solid rgb(170, 0, 250, 0.2);
-  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236,0.7);
+  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236, 0.7);
   padding: 5px;
   border-radius: 5px;
 }
@@ -50,22 +50,24 @@
   color: rgb(170, 0, 250);
   display: inline;
 }
-.h1Home div{
+.h1Home div {
   display: inline-block;
 }
 .h2Home {
   text-decoration: underline;
 }
-.contactDiv{
+.contactDiv {
   border: 1px solid rgb(170, 0, 250, 0.2);
-  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236,0.7);
+  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236, 0.7);
   padding: 20px 5px 20px 5px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
 }
-.skillsDiv{
+.skillsDiv {
   margin: 10px 0;
-   border: 1px solid rgb(170, 0, 250, 0.2);
-  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236,0.7);
+  border: 1px solid rgb(170, 0, 250, 0.2);
+  box-shadow: 0px 0px 5px 5px rgb(232, 200, 236, 0.7);
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
 }
@@ -96,6 +98,7 @@
   margin-right: 30%;
   animation-name: contacts;
   animation-duration: 2s;
+  box-shadow: 0px 0px 5px 5px rgb(238, 236, 236);
 }
 .phoneHome {
   background-color: rgb(58, 231, 15);
@@ -105,23 +108,29 @@
   margin-right: 30%;
   animation-name: contacts;
   animation-duration: 2s;
+  box-shadow: 0px 0px 5px 5px rgb(238, 236, 236);
 }
 .emailHome {
   background-color: red;
   color: white;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgb(238, 236, 236);
 }
-.typer{
-  width:2px;
+.typer {
+  width: 2px;
   height: 30px;
   background-color: black;
   animation: typing 0.8s infinite;
 }
 
 @keyframes typing {
-  0%{background-color: black;}
-  10%{background-color: white;}
+  0% {
+    background-color: black;
+  }
+  10% {
+    background-color: white;
+  }
 }
 @keyframes contacts {
   0% {

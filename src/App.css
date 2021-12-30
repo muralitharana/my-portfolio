@@ -4,7 +4,7 @@
 
 .spinner-box {
   width: 50%;
-  height: 500px;
+  height: 300px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -32,6 +32,11 @@
   font-weight: bold;
   font-size: 50px;
   color: rgb(170,0,250);
+}
+.loadingContent{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(179, 11, 179, 0.527);
 }
 @keyframes spin {
   0% {
